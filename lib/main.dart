@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payflow_nlw6/core/app_colors.dart';
+import 'package:payflow_nlw6/modules/home/home_page.dart';
 import 'package:payflow_nlw6/modules/login/login_page.dart';
 import 'package:payflow_nlw6/modules/splash/splash_page.dart';
 
@@ -17,7 +18,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primaryColor: AppColors.primary,
       ),
-      home: LoginPage(),
+      home: HomePage(),
     );
   }
 }
