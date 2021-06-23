@@ -1,16 +1,32 @@
-# payflow_nlw6
+# PayFlow NLW6
+pt: Uma aplicação construída para organizar os boletos em um só lugar. Este aplicativo está sendo desenvolvido com o Flutter durante a sexta Next Level Week promovida pela RockeatSeat, veja em: https://nextlevelweek.com/inscricao/6.
 
-A new Flutter project.
+es: An aplication built to organize bank slips in just one place. This app have been built in Flutter during the 6th Next Level Week organized by RockeatSeat, see in: https://nextlevelweek.com/inscricao/6.
 
-## Getting Started
+### Requirements
+You may have installed these tecnologies in your computer:
+- Flutter
+- Dart
 
-This project is a starting point for a Flutter application.
+For more information, you can find the installation tutorial in: https://flutter.dev/docs/get-started/install and its documentation in: https://flutter.dev/docs.
 
-A few resources to get you started if this is your first Flutter project:
+### Design
+The app design was built by RockeatSeat, and can be founded in https://www.figma.com/file/kLK7FYnWKMoN68sQXcSniu/PayFlow?node-id=0%3A1.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Snapshots
+Here are the snapshots of the current state of the aplication:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Home: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/home-page.jpg" height=400px>
+
+- Splash: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/splash-page.jpg" height=400px>
+
+- Login: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/login-page.jpg" height=400px>
+
+
+### 📌 Find me!
+- Linkedin: https://www.linkedin.com/in/samillynunes19/
+- Instagram: https://www.instagram.com/samyy_nunes/
+- Github: https://github.com/SamillyNunes
