@@ -1,7 +1,7 @@
 # PayFlow NLW6
 pt: Uma aplicação construída para organizar os boletos em um só lugar. Este aplicativo está sendo desenvolvido com o Flutter durante a sexta Next Level Week promovida pela RockeatSeat, veja em: https://nextlevelweek.com/inscricao/6.
 
-es: An aplication built to organize bank slips in just one place. This app have been built in Flutter during the 6th Next Level Week organized by RockeatSeat, see in: https://nextlevelweek.com/inscricao/6.
+en: An aplication built to organize bank slips in just one place. This app have been built in Flutter during the 6th Next Level Week organized by RockeatSeat, see in: https://nextlevelweek.com/inscricao/6.
 
 ### Requirements
 You may have installed these tecnologies in your computer:
