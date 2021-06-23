@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:payflow_nlw6/models/user_model.dart';
 import 'package:payflow_nlw6/shared/auth/auth_controller.dart';
 
 class LoginController {
@@ -14,7 +15,11 @@ class LoginController {
 
     try {
       final response = await _googleSignIn.signIn();
-      authController.setUser(context, response);
+      final user = UserModel(
+        name: response!.displayName!,
+        imageUrl: response.photoUrl,
+      );
+      authController.setUser(context, user);
       print("response: $response");
     } catch (error) {
       authController.setUser(context, null);
