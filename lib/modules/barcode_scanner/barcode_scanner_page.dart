@@ -19,6 +19,11 @@ class _BarCodeScannerPageState extends State<BarCodeScannerPage> {
   @override
   void initState() {
     controller.getAvailableCameras();
+    controller.statusNotifer.addListener(() {
+      if (controller.status.hasBarcode) {
+        Navigator.pushReplacementNamed(context, "/insert_boleto");
+      }
+    });
     super.initState();
   }
 
@@ -42,7 +47,7 @@ class _BarCodeScannerPageState extends State<BarCodeScannerPage> {
             builder: (_, status, __) {
               if (status.showCamera) {
                 return Container(
-                  child: status.cameraController!.buildPreview(),
+                  child: controller.cameraController!.buildPreview(),
                 );
               } else {
                 return Container();
@@ -102,7 +107,7 @@ class _BarCodeScannerPageState extends State<BarCodeScannerPage> {
                       "Tente escanear novamente ou digite o código do seu boleto.",
                   primaryLabel: "Escanear novamente",
                   primaryOnPressed: () {
-                    controller.getAvailableCameras();
+                    controller.scanWithCamera();
                   },
                   secondaryLabel: "Digitar código",
                   secondaryOnPressed: () {},
