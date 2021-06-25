@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:payflow_nlw6/core/app_colors.dart';
 import 'package:payflow_nlw6/core/app_text_styles.dart';
+import 'package:payflow_nlw6/models/BoletoModel.dart';
 import 'package:payflow_nlw6/modules/home/home_controller.dart';
+import 'package:payflow_nlw6/modules/meus_boletos/meus_boletos_page.dart';
+import 'package:payflow_nlw6/shared/widgets/boleto_list/boleto_list_widget.dart';
+import 'package:payflow_nlw6/shared/widgets/boleto_tile/boleto_tile_widget.dart';
 
 class HomePage extends StatelessWidget {
   final controller = HomeController();
 
   final pages = [
-    Container(
-      color: Colors.red,
-    ),
+    MeusBoletosPage(),
     Container(
       color: Colors.blue,
     ),
@@ -75,7 +77,7 @@ class HomePage extends StatelessWidget {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, "/barcode_scanner");
+                  Navigator.pushNamed(context, "/insert_boleto");
                 },
                 child: Container(
                   height: 56,

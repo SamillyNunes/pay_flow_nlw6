@@ -9,15 +9,6 @@ import 'package:payflow_nlw6/modules/splash/splash_page.dart';
 import 'app_colors.dart';
 
 class AppWidget extends StatelessWidget {
-  AppWidget() {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitDown,
-      DeviceOrientation.portraitUp,
-    ]);
-    SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(statusBarColor: AppColors.primary));
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,7 +19,7 @@ class AppWidget extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       // home: LoginPage(),
-      initialRoute: "/insert_boleto",
+      initialRoute: "/splash",
       routes: {
         "/splash": (context) => SplashPage(),
         "/home": (context) => HomePage(),

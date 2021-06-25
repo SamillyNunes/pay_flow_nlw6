@@ -18,6 +18,7 @@ class InsertBoletoController {
   Future<void> cadastrarBoleto() async {
     final form = formKey.currentState;
     if (form!.validate()) {
+      print("validado! salvando...");
       return saveBoleto();
     }
   }
@@ -45,6 +46,8 @@ class InsertBoletoController {
 
       await instance.setStringList("boletos", boletos);
       return;
-    } catch (e) {}
+    } catch (e) {
+      print("Problema ao salvar boleto. Erro: $e");
+    }
   }
 }
