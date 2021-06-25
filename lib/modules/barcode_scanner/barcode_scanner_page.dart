@@ -4,8 +4,6 @@ import 'package:payflow_nlw6/core/app_text_styles.dart';
 import 'package:payflow_nlw6/modules/barcode_scanner/barcode_scanner_controller.dart';
 import 'package:payflow_nlw6/modules/barcode_scanner/barcode_scanner_status.dart';
 import 'package:payflow_nlw6/shared/widgets/bottom_sheet/bottom_sheet_widget.dart';
-import 'package:payflow_nlw6/shared/widgets/divider_vertical/divider_vertical_widget.dart';
-import 'package:payflow_nlw6/shared/widgets/label_button/label_button.dart';
 import 'package:payflow_nlw6/shared/widgets/set_label_buttons/set_label_buttons.dart';
 
 class BarCodeScannerPage extends StatefulWidget {

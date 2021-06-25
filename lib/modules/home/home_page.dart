@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+
 import 'package:payflow_nlw6/core/app_colors.dart';
 import 'package:payflow_nlw6/core/app_text_styles.dart';
-import 'package:payflow_nlw6/models/BoletoModel.dart';
+import 'package:payflow_nlw6/models/user_model.dart';
 import 'package:payflow_nlw6/modules/extract/extract_page.dart';
 import 'package:payflow_nlw6/modules/home/home_controller.dart';
 import 'package:payflow_nlw6/modules/meus_boletos/meus_boletos_page.dart';
-import 'package:payflow_nlw6/shared/widgets/boleto_list/boleto_list_widget.dart';
-import 'package:payflow_nlw6/shared/widgets/boleto_tile/boleto_tile_widget.dart';
 
 class HomePage extends StatelessWidget {
+  final UserModel user;
+  HomePage({
+    Key? key,
+    required this.user,
+  }) : super(key: key);
+
   final controller = HomeController();
 
   final pages = [
@@ -32,7 +37,7 @@ class HomePage extends StatelessWidget {
                   style: AppTextStyles.titleRegular,
                   children: [
                     TextSpan(
-                      text: "Samilly",
+                      text: "${user.name}",
                       style: AppTextStyles.titleBoldBackground,
                     ),
                   ],
@@ -48,6 +53,7 @@ class HomePage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(5),
+                  image: DecorationImage(image: NetworkImage(user.imageUrl!)),
                 ),
               ),
             ),
