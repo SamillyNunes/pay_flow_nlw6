@@ -10,11 +10,12 @@ import 'app_colors.dart';
 
 class AppWidget extends StatelessWidget {
   AppWidget() {
-    // para bloquear a rotação do app
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitDown,
       DeviceOrientation.portraitUp,
     ]);
+    SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(statusBarColor: AppColors.primary));
   }
 
   @override

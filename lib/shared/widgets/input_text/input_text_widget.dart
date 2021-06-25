@@ -33,6 +33,7 @@ class InputTextWidget extends StatelessWidget {
             validator: this.validator,
             style: AppTextStyles.input,
             onChanged: this.onChanged,
+            controller: this.controller,
             decoration: InputDecoration(
               labelText: label,
               labelStyle: AppTextStyles.input,
