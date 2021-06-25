@@ -5,6 +5,7 @@ import 'package:payflow_nlw6/models/BoletoModel.dart';
 import 'package:payflow_nlw6/shared/widgets/boleto_info/boleto_info_widget.dart';
 import 'package:payflow_nlw6/shared/widgets/boleto_list/boleto_list_controller.dart';
 import 'package:payflow_nlw6/shared/widgets/boleto_list/boleto_list_widget.dart';
+import 'package:animated_card/animated_card.dart';
 
 class MeusBoletosPage extends StatefulWidget {
   @override
@@ -29,8 +30,10 @@ class _MeusBoletosPageState extends State<MeusBoletosPage> {
               padding: const EdgeInsets.symmetric(horizontal: 24.0),
               child: ValueListenableBuilder<List<BoletoModel>>(
                 valueListenable: controller.boletosNotifier,
-                builder: (_, List boletos, __) =>
-                    BoletoInfoWidget(size: boletos.length),
+                builder: (_, List boletos, __) => AnimatedCard(
+                  direction: AnimatedCardDirection.top,
+                  child: BoletoInfoWidget(size: boletos.length),
+                ),
               ),
             ),
           ],

@@ -60,9 +60,11 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: ValueListenableBuilder(
-        valueListenable: controller.currentPageNotifier,
-        builder: (context, int indexPage, child) => pages[indexPage],
+      body: SingleChildScrollView(
+        child: ValueListenableBuilder(
+          valueListenable: controller.currentPageNotifier,
+          builder: (context, int indexPage, child) => pages[indexPage],
+        ),
       ),
       bottomNavigationBar: ValueListenableBuilder(
         valueListenable: controller.currentPageNotifier,
@@ -81,8 +83,8 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {
-                  Navigator.pushNamed(context, "/insert_boleto");
+                onTap: () async {
+                  await Navigator.pushNamed(context, "/barcode_scanner");
                 },
                 child: Container(
                   height: 56,
