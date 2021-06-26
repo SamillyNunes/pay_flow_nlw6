@@ -17,6 +17,13 @@ class AuthController {
     }
   }
 
+  Future<void> resetUser(BuildContext context) async {
+    _user = null;
+    final instance = await SharedPreferences.getInstance();
+    await instance.clear(); // limpar todas as prefencias salvas
+    return;
+  }
+
   Future<void> saveUser(UserModel user) async {
     final instance = await SharedPreferences.getInstance();
     await instance.setString("user", user.toJson());

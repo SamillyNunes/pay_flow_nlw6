@@ -6,13 +6,6 @@ import 'core/app_colors.dart';
 import 'core/app_widget.dart';
 
 void main() {
-  SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitDown,
-    DeviceOrientation.portraitUp,
-  ]);
-  SystemChrome.setSystemUIOverlayStyle(
-    SystemUiOverlayStyle(statusBarColor: AppColors.primary),
-  );
   runApp(AppWidget());
 }
 
@@ -26,6 +19,13 @@ class _AppFirebaseState extends State<AppFirebase> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitDown,
+      DeviceOrientation.portraitUp,
+    ]);
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: AppColors.primary),
+    );
     return FutureBuilder(
       future: _initialization,
       builder: (context, snapshot) {

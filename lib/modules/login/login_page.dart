@@ -4,6 +4,7 @@ import 'package:payflow_nlw6/core/app_images.dart';
 import 'package:payflow_nlw6/core/app_text_styles.dart';
 import 'package:payflow_nlw6/modules/login/login_controller.dart';
 import 'package:payflow_nlw6/shared/widgets/social_login/social_login_button.dart';
+import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -11,10 +12,12 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final controller = LoginController();
+  // final controller = LoginController();
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
+    final controller = Provider.of<LoginController>(context);
 
     return Scaffold(
       backgroundColor: AppColors.background,

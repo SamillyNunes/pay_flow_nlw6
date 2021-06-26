@@ -6,6 +6,15 @@ import 'package:payflow_nlw6/shared/auth/auth_controller.dart';
 class LoginController {
   final authController = AuthController();
 
+  Future<void> googleSignOut(BuildContext context) async {
+    GoogleSignIn _googleSignIn = GoogleSignIn();
+    await _googleSignIn.signOut();
+
+    await authController.resetUser(context);
+    await Navigator.pushReplacementNamed(context, "/login");
+    return;
+  }
+
   Future<void> googleSignIn(BuildContext context) async {
     GoogleSignIn _googleSignIn = GoogleSignIn(
       scopes: [

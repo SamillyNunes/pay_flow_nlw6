@@ -26,34 +26,39 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(152),
-        child: Container(
-          height: 152,
-          color: AppColors.primary,
-          child: Center(
-            child: ListTile(
-              title: Text.rich(
-                TextSpan(
-                  text: "Olá, ",
-                  style: AppTextStyles.titleRegular,
-                  children: [
-                    TextSpan(
-                      text: "${user.name}",
-                      style: AppTextStyles.titleBoldBackground,
-                    ),
-                  ],
+        child: InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, "/settings");
+          },
+          child: Container(
+            height: 152,
+            color: AppColors.primary,
+            child: Center(
+              child: ListTile(
+                title: Text.rich(
+                  TextSpan(
+                    text: "Olá, ",
+                    style: AppTextStyles.titleRegular,
+                    children: [
+                      TextSpan(
+                        text: "${user.name}",
+                        style: AppTextStyles.titleBoldBackground,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              subtitle: Text(
-                "Mantenha as suas contas em dia",
-                style: AppTextStyles.captionShape,
-              ),
-              trailing: Container(
-                height: 48,
-                width: 48,
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(5),
-                  image: DecorationImage(image: NetworkImage(user.imageUrl!)),
+                subtitle: Text(
+                  "Mantenha as suas contas em dia",
+                  style: AppTextStyles.captionShape,
+                ),
+                trailing: Container(
+                  height: 48,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(5),
+                    image: DecorationImage(image: NetworkImage(user.imageUrl!)),
+                  ),
                 ),
               ),
             ),
