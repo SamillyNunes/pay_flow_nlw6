@@ -17,13 +17,31 @@ The app design was built by RockeatSeat, and can be founded in https://www.figma
 Here are the snapshots of the current state of the aplication:
 
 - Home: 
-<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/home-page.jpg" height=400px>
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/home.jpg" height=400px>
 
 - Splash: 
 <img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/splash-page.jpg" height=400px>
 
 - Login: 
 <img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/login-page.jpg" height=400px>
+
+- Extratos: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/meus-boletos.jpg" height=400px>
+
+- Escanear: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/escanear.jpg" height=400px>
+
+- Inserir informações do boleto: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/inserir-info.jpg" height=400px>
+
+- Configurações: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/configuracoes.jpg" height=400px>
+
+- Estado do boleto: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/estado-boleto.jpg" height=400px>
+
+- Erro ao escanear: 
+<img src="https://github.com/SamillyNunes/pay_flow_nlw6/blob/main/assets/readme/erro-escanear.jpg" height=400px>
 
 
 ### 📌 Find me!
